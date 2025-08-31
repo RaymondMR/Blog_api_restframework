@@ -1,1 +1,56 @@
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Archivos de Django
+*.log
+*.pot
+*.pyc
+*.mo
+*.db
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Archivos de migraciones compiladas
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.pyd
+
+# Archivos de entornos virtuales
 .venv/
+venv/
+env/
+ENV/
+*.env
+
+# Archivos de IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de cobertura y pruebas
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Archivos generados por pip
+pip-wheel-metadata/
+
