@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     #local apps
     "accounts.apps.AccountsConfig",
     "posts.apps.PostsConfig",
+    #third party apps
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -125,4 +127,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ],
+}
 
